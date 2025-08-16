@@ -1,117 +1,30 @@
-Gameplay:
-  ✔ Preparing and shuffling reels @done (25-07-12 08:52)
-  ✔ Symbol Points @done (25-07-12 11:07)
-  ✔ finding bonus @done (25-07-12 11:07)
-  ✔ ANIMATIONS @done (25-07-12 22:17)
-  ✔ Move and reroll @done (25-07-13 11:43)
-  ✔ Diagonal Bonus @done (25-07-13 13:24)
 
-  ✔ Reshuffle after spin @done (25-07-15 18:53)
-  ✔ Endless Round @done (25-07-15 18:42)
+☐ MAKE THE GAME FUN
 
-  ✔ Special symbols base @done (25-07-15 10:56)
-   ✔ REEL INFO @done (25-07-15 19:43)
+FEEDBACK:
+ ☐ Adding Hotkeys
+ ☐ Tying the Spins, Reel Spins, and Reel Movies to a similar color would help indicate functional unity
+ ☐ Adding a bar that fills up at the top when scoring would help do a visual impact of gambling
+ ☐ You can add the option to remove outcomes (bonuses) as well.  Or, make it a trade off where their value increases, but it reduces their chances of appearing.
+ ☐ You need to make it clearer that Emburger + Pipe function differently from the A & W
+ ☐ Pipes are overpowered
 
- ☐ MAKE THE GAME FUN
- ☐ Game END STATS
-
- ✔ MAKE SURE THAT CUTSCENES WORK CORRECTLY @done (25-07-20 10:07)
-
+BUGS:
+ ☐ There's some scoring that it doesn't seem to do.  Not sure if this is due to you trying to avoid redundancy, but how many times should a 3x3 be scored? 
  ☐ BUG: trim pipes at the end of the chain from bonuses
 
- ✔ WASM: COLORS DOESN'T LOOK CORRECT (OF COURSE) @done (25-07-21 23:51)
-
- ☐ Make final UI Layout:
-   ✔ TURN OFF THE FUCKING ANIMATIONS IN GAME @done (25-07-20 10:08)
-   ✔ LEFT PANEL: @done (25-07-20 10:08)
-     ✔ GOAL @done (25-07-19 18:19)
-     ✔ CURRENT POINTS @done (25-07-19 18:19)
-     ✔ (Space, maybe bigger font, it's the most important) @done (25-07-19 22:45)
-     ✔ GOLD (Icon?) @done (25-07-19 22:45)
-     ✔ CURENT SPINS, MOVES, RESPINS (Kinda important, maybe change place, Money here is kinda off) @done (25-07-19 18:19)
-     ✔ Reel info (I don't have better place for that) @done (25-07-20 10:09)
-
-   ☐ REELS:
-     ☐ Make the buttons nicer somehow
-
-   ✔ TOP PANEL: @done (25-07-19 22:45)
-     ✔ BOARD POINTS (I would love some animation when it's going up) @done (25-07-19 22:45)
-   ☐ REELS BUTTONS:
-     ☐ STYLIZE THEM
-     ✔ Move UI to render function? @done (25-07-19 22:45)
-   ✔ RIGHT PANEL @done (25-07-19 22:45)
-     ✔ I think it might be the same as Left panel @done (25-07-19 18:19)
-   ☐ SPIN AND ACCEPT BUTTONS
-     ☐ (BIGGER, visible, maybe some flashing anim)
-     ☐ Red and blue?
-
-   ✔ SHOP: @done (25-07-19 22:45)
-     ✔ Approximately the size of the Reels @done (25-07-19 22:45)
-     ✔ Reels buttons still visible (?) @done (25-07-19 22:45)
-     ✔ Just make it look nice, dunno @done (25-07-19 22:45)
 
 
- ☐ MENU
- ✔ Disable UI @done (25-07-19 10:11)
- ✔ Longer chains should give more multiplier @done (25-07-19 16:32)
- ☐ Game stage transition
+________OTHER_______:
+☐ Game stage transition
 
-  ☐ Special symbols:
-    ✔ W and A @done (25-07-15 10:56)
-    ☐ Homemade explosives
-    ☐ Special Cherry
-    ✔ Pipe @done (25-07-18 20:29)
+Special symbols:
+  ☐ Homemade explosives
 
-  ☐ Items:
-    ✔ Jorb - gives one more spin @done (25-07-18 22:38)
+  Items:
     ☐ A gift from your girlfriend - every X spins add an Homemade explosive to random reel
     ☐ Legally distinct flying squirell - gives one more item to buy in shop
-    ✔ Something that boosts multiplier for different symbol types @done (25-07-21 23:51)
-
-  ☐ Rounds
-    ✔ Number of spins @done (25-07-13 16:46)
-    ✔ Number of respins and moves @done (25-07-13 16:46)
-    ✔ Target points @done (25-07-13 17:34)
-    ✔ Finishing round and moving to the next one @done (25-07-13 17:34)
-    ✔ Fail state @done (25-07-21 23:51)
-      ✔ Make sure the state is properly reset @done (25-07-21 23:51)
-      ✔ Do I just let retry the round? @done (25-07-13 17:33)
-      ✔ Probably back to menu (make sure you can skip cutscenes) @done (25-07-19 22:46)
-  
   ☐ Shop ?
-    ✔ Implement money @done (25-07-13 21:13)
-    ✔ Getting money after rounds (probably balatro style) @done (25-07-19 16:41)
-    ✔ Add Shop items @done (25-07-13 21:13)
-    ✔ Buying symbols @done (25-07-13 21:13)
-    ✔ UI @done (25-07-19 22:46)
     ☐ Removing symbols (?)
-    ✔ Buying items @done (25-07-19 16:41)
-    ✔ Add all items @done (25-07-19 16:41)
-    ✔ Selecting reel to put symbol into @done (25-07-21 23:51)
-    ☐ Multiple symbols in one item
     ☐ Weighten shop buying
 
-  ✔ Points animation: @done (25-07-20 10:31)
-    ✔ numbers over basic symbols @done (25-07-15 10:57)
-    ✔ then highligh bonus + nubmers @done (25-07-15 10:57)
-    ✔ then special stuff @done (25-07-20 10:31)
- 
- ✔ UI: @done (25-07-20 10:32)
-   ✔ STYLING @done (25-07-20 10:32)
-   ✔ Panels @done (25-07-19 22:46)
-   ✔ New font (kenney pixel) @done (25-07-19 16:41)
-   ✔ Things to show: @done (25-07-19 22:46)
-     ✔ Goal @done (25-07-15 16:04)
-     ✔ Current Points @done (25-07-15 16:04)
-     ✔ Board Points @done (25-07-15 16:04)
-     ✔ Items @done (25-07-19 16:41)
-     ✔ Round / spins / moves @done (25-07-15 16:04)
-     ✔ Money @done (25-07-19 16:41)
-
-
-  
-
-
-  ✘ Dev-test round @cancelled (25-07-20 10:32)
-
-  ✔ Popup UI over higlighted symbols @done (25-07-13 15:36)

@@ -188,7 +188,7 @@ GameLoad : dm.GameLoad : proc(platform: ^dm.Platform) {
 
     InitCharacters()
 
-    // BeginGameplay()
+    BeginGameplay()
 }
 
 
@@ -200,11 +200,11 @@ GameUpdate : dm.GameUpdate : proc(state: rawptr) {
     //     dm.platform.debugState = true
     // }
 
-    // if dm.GetKeyState(.A) == .JustPressed {
-    //     for &i in gameState.itemsData {
-    //         i.isBought = true
-    //     }
-    // }
+    if dm.GetKeyState(.A) == .JustPressed {
+        for &i in gameState.itemsData {
+            i.isBought = true
+        }
+    }
 
     switch gameState.stage {
     case .Menu:     MenuUpdate()

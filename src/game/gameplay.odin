@@ -288,40 +288,40 @@ GameplayUpdate :: proc() {
     // DEBUG
     ////////////
 
-    // if dm.GetKeyState(.Z) == .JustPressed {
-    //     gameState.evalResult = Evaluate(gameState.reels[:])
-    //     StartScoreAnim()
-    // }
+    if dm.GetKeyState(.Z) == .JustPressed {
+        gameState.evalResult = Evaluate(gameState.reels[:])
+        StartScoreAnim()
+    }
 
-    // if dm.GetKeyState(.S) == .JustPressed {
-    //     BeginNextRound()
-    // }
+    if dm.GetKeyState(.S) == .JustPressed {
+        BeginNextRound()
+    }
 
-    // mousePos := dm.ScreenToWorldSpace(dm.input.mousePos).xy
+    mousePos := dm.ScreenToWorldSpace(dm.input.mousePos).xy
 
-    // for &reel, x in gameState.reels {
-    //     for y in 0..< ROWS_COUNT + 1 {
-    //         pos := GetSymbolPosition(x, y)
-    //         bounds := dm.CreateBounds(pos, 1)
+    for &reel, x in gameState.reels {
+        for y in 0..< ROWS_COUNT + 1 {
+            pos := GetSymbolPosition(x, y)
+            bounds := dm.CreateBounds(pos, 1)
 
-    //         if dm.IsInBounds(bounds, mousePos) {
-    //             scroll := dm.input.scroll
-    //             startIdx := int(reel.position)
-    //             idx := (startIdx + y) % reel.count
+            if dm.IsInBounds(bounds, mousePos) {
+                scroll := dm.input.scroll
+                startIdx := int(reel.position)
+                idx := (startIdx + y) % reel.count
 
-    //             if scroll != 0 {
+                if scroll != 0 {
                     
-    //                 i := cast(int) reel.symbols[idx]
-    //                 i = (i + scroll) % len(SymbolType)
-    //                 if i < 0 {
-    //                     i = len(SymbolType) - 1
-    //                 }
+                    i := cast(int) reel.symbols[idx]
+                    i = (i + scroll) % len(SymbolType)
+                    if i < 0 {
+                        i = len(SymbolType) - 1
+                    }
 
-    //                 reel.symbols[idx] = cast(SymbolType) i
-    //             }
-    //         }
-    //     }
-    // }
+                    reel.symbols[idx] = cast(SymbolType) i
+                }
+            }
+        }
+    }
 }
 
 BoardSize :: proc() -> v2 {

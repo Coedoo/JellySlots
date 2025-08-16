@@ -74,15 +74,15 @@ BeginNextRound :: proc() {
         ROUNDS[len(ROUNDS) - 1].goal = prevGoal * int(math.pow(1.5, f32(gameState.endlessRoundNumber)))
     }
 
-    if ROUNDS[gameState.roundIdx].cutsceneIdx != 0 && 
-        SKIP_CUTSCENES == false
-    {
-        gameState.stage = .Cutscene
-        gameState.cutsceneIdx = ROUNDS[gameState.roundIdx].cutsceneIdx
-    }
-    else {
-        gameState.stage = .Gameplay
-    }
+    // if ROUNDS[gameState.roundIdx].cutsceneIdx != 0 && 
+    //     SKIP_CUTSCENES == false
+    // {
+    //     gameState.stage = .Cutscene
+    //     gameState.cutsceneIdx = ROUNDS[gameState.roundIdx].cutsceneIdx
+    // }
+    // else {
+    //     gameState.stage = .Gameplay
+    // }
 
     gameState.spins = SPINS_PER_ROUND
     gameState.allPoints = 0
