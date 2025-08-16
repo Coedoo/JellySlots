@@ -2,6 +2,8 @@ build
 build_web
 local
 
+!lib/SDL2.dll
+
 *.dll
 *.exe
 *.exp
@@ -13,5 +15,3 @@ local
 *.sublime-project
 
 # todo.tasks
-examples/Maemi
-examples/scratch
